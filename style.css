@@ -1,1 +1,213 @@
+/* ===== Fonte e base ===== */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@400;500&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #0d0d0d; /* Preto elegante */
+    color: #f5d076; /* Dourado claro para texto */
+    line-height: 1.6;
+}
+
+/* ===== Cabeçalho ===== */
+header {
+    background-color: #1a1a1a;
+    padding: 25px 0;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+}
+
+header h1 {
+    font-family: 'Playfair Display', serif;
+    color: #f5d076; /* Dourado */
+    font-size: 3rem;
+    text-align: center;
+    margin: 0;
+    letter-spacing: 2px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 15px;
+    padding: 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #f5d076;
+    font-weight: 500;
+    font-size: 1.1rem;
+    transition: 0.3s;
+    letter-spacing: 1px;
+}
+
+nav ul li a:hover {
+    color: #ffd700; /* Dourado vibrante no hover */
+}
+
+/* ===== Seções ===== */
+section {
+    padding: 70px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+section h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    color: #ffd700;
+    text-align: center;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+section h2::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 3px;
+    background-color: #f5d076;
+    margin: 10px auto 0;
+    border-radius: 2px;
+}
+
+/* ===== Cards de serviços ===== */
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.card {
+    background-color: #1a1a1a;
+    border: 2px solid #f5d076;
+    border-radius: 15px;
+    padding: 30px 20px;
+    width: 280px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card i {
+    color: #ffd700;
+    margin-bottom: 15px;
+}
+
+.card h3 {
+    color: #ffd700;
+    margin-bottom: 15px;
+    font-family: 'Playfair Display', serif;
+}
+
+.card p {
+    color: #f5d076;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 25px rgba(255, 215, 0, 0.4);
+}
+
+/* ===== Portfolio ===== */
+.grid-portfolio {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.portfolio-item img {
+    width: 100%;
+    border-radius: 15px;
+    border: 3px solid #f5d076;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.portfolio-item img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 25px rgba(255, 215, 0, 0.4);
+}
+
+/* ===== Formulário de contato ===== */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+input, textarea {
+    padding: 12px 15px;
+    border-radius: 8px;
+    border: 1px solid #f5d076;
+    background-color: #1a1a1a;
+    color: #f5d076;
+    font-size: 1rem;
+    resize: none;
+}
+
+input:focus, textarea:focus {
+    outline: none;
+    border-color: #ffd700;
+}
+
+button {
+    background-color: #ffd700;
+    color: #1a1a1a;
+    font-weight: bold;
+    border: none;
+    padding: 12px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #f5d076;
+}
+
+/* ===== Footer ===== */
+footer {
+    background-color: #1a1a1a;
+    color: #f5d076;
+    text-align: center;
+    padding: 25px 20px;
+}
+
+footer .social a {
+    color: #ffd700;
+    margin: 0 10px;
+    font-size: 1.2rem;
+    transition: 0.3s;
+}
+
+footer .social a:hover {
+    color: #fff;
+}
+
+/* ===== Pequenas melhorias ===== */
+a {
+    transition: color 0.3s;
+}
+
+img {
+    display: block;
+}
+
+/* ===== Responsivo ===== */
+@media screen and (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .cards {
+        flex-direction: column;
+        align-items: center;
+    }
+}
 
