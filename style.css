@@ -57,4 +57,103 @@ footer {
     margin-top: 20px;
 }
 
+/* ===== Estilo base ===== */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #fef9f0; /* bege clarinho tipo algodão */
+    color: #333; /* texto escuro legível */
+    margin: 0;
+    padding: 0;
+}
+
+/* ===== Cabeçalho ===== */
+header {
+    background-color: #a8d5ba; /* verde suave, lembra plantas/tecidos naturais */
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+header h1 {
+    color: #1a472a; /* verde mais escuro */
+    font-size: 2.5rem;
+    margin: 0;
+    font-family: 'Georgia', serif; /* mais artesanal */
+}
+
+/* ===== Navegação ===== */
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #1a472a;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #e07a5f; /* cor de fio ou lã quente */
+}
+
+/* ===== Seções ===== */
+section {
+    padding: 50px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+section h2 {
+    color: #e07a5f; /* destaque nos títulos */
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+/* ===== Cards de produtos ou tecelagens ===== */
+.card {
+    background-color: #ffffff;
+    border: 2px solid #a8d5ba;
+    border-radius: 15px;
+    padding: 20px;
+    margin: 20px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+}
+
+/* ===== Rodapé ===== */
+footer {
+    background-color: #a8d5ba;
+    color: #1a472a;
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9rem;
+}
+
+/* ===== Botões ===== */
+button {
+    background-color: #e07a5f;
+    color: #fff;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #c65c45;
+}
+
 
