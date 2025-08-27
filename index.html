@@ -3,76 +3,97 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Esqueleto do Site</title>
-</head>
-<body>
-    <header>
-        <h1>Meu Site</h1>
-        <p>Trabalho da Faculdade</p>
-    </header>
-
-    <nav>
-        <ul>
-            <li><a href="#">Início</a></li>
-            <li><a href="#">Sobre</a></li>
-            <li><a href="#">Contato</a></li>
-        </ul>
-    </nav>
-
-    <main>
-        <section>
-            <h2>Seção Principal</h2>
-            <p>Aqui vai o conteúdo principal.</p>
-        </section>
-
-        <article>
-            <h3>Artigo Exemplo</h3>
-            <p>Esse é um exemplo de artigo dentro do site.</p>
-        </article>
-    </main>
-
-    <footer>
-        <p>&copy; 2025 - Trabalho Faculdade</p>
-    </footer>
-</body>
-</html>
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meu Site</title>
-    <!-- Link para o CSS externo -->
+    <title>Tecelagem Fios de Ouro</title>
     <link rel="stylesheet" href="style.css">
+    <!-- Link para ícones Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
+    <!-- ===== Header ===== -->
     <header>
-        <h1>Meu Site</h1>
-        <p>Trabalho da Faculdade</p>
+        <div class="container">
+            <h1>Tecelagem Fios de Ouro</h1>
+            <nav>
+                <ul>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#servicos">Serviços</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
-    <nav>
-        <ul>
-            <li><a href="#">Início</a></li>
-            <li><a href="#">Sobre</a></li>
-            <li><a href="#">Contato</a></li>
-        </ul>
-    </nav>
+    <!-- ===== Sobre ===== -->
+    <section id="sobre">
+        <div class="container">
+            <h2>Sobre Nós</h2>
+            <p>Na Tecelagem Fios de Ouro, unimos tradição e inovação para criar tecidos exclusivos e de alta qualidade. Nossas peças são produzidas artesanalmente, garantindo durabilidade, beleza e sofisticação.</p>
+        </div>
+    </section>
 
-    <main>
-        <section>
-            <h2>Seção Principal</h2>
-            <p>Aqui vai o conteúdo principal.</p>
-        </section>
+    <!-- ===== Serviços ===== -->
+    <section id="servicos">
+        <div class="container">
+            <h2>Serviços</h2>
+            <div class="cards">
+                <div class="card">
+                    <i class="fas fa-spa fa-3x"></i>
+                    <h3>Tecelagem Artesanal</h3>
+                    <p>Criação de tecidos exclusivos feitos à mão, com atenção aos detalhes e qualidade premium.</p>
+                </div>
+                <div class="card">
+                    <i class="fas fa-palette fa-3x"></i>
+                    <h3>Design Personalizado</h3>
+                    <p>Desenvolvemos padrões e cores únicas para projetos de moda, decoração e produtos especiais.</p>
+                </div>
+                <div class="card">
+                    <i class="fas fa-industry fa-3x"></i>
+                    <h3>Produção em Larga Escala</h3>
+                    <p>Capacidade de atender pedidos corporativos com qualidade industrial mantendo o toque artesanal.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-        <article>
-            <h3>Artigo Exemplo</h3>
-            <p>Esse é um exemplo de artigo dentro do site.</p>
-        </article>
-    </main>
+    <!-- ===== Portfolio ===== -->
+    <section id="portfolio">
+        <div class="container">
+            <h2>Nosso Portfolio</h2>
+            <div class="grid-portfolio">
+                <div class="portfolio-item"><img src="img/tecido1.jpg" alt="Tecido 1"></div>
+                <div class="portfolio-item"><img src="img/tecido2.jpg" alt="Tecido 2"></div>
+                <div class="portfolio-item"><img src="img/tecido3.jpg" alt="Tecido 3"></div>
+                <div class="portfolio-item"><img src="img/tecido4.jpg" alt="Tecido 4"></div>
+            </div>
+        </div>
+    </section>
 
+    <!-- ===== Contato ===== -->
+    <section id="contato">
+        <div class="container">
+            <h2>Contato</h2>
+            <p>Email: contato@fiosdeouro.com</p>
+            <p>Telefone: (11) 99999-9999</p>
+            <form>
+                <input type="text" placeholder="Seu Nome" required>
+                <input type="email" placeholder="Seu Email" required>
+                <textarea placeholder="Mensagem" required></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- ===== Footer ===== -->
     <footer>
-        <p>&copy; 2025 - Trabalho Faculdade</p>
+        <div class="container">
+            <p>© 2025 Tecelagem Fios de Ouro. Todos os direitos reservados.</p>
+            <div class="social">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+        </div>
     </footer>
 </body>
 </html>
